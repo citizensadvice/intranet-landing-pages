@@ -1,0 +1,15 @@
+<div class="cads-grid-container">
+  <div class="cads-grid-row">
+    <div class="cads-grid-col">
+      <h3>Recently updated content</h3>
+      <ul>
+        <% data.intranet.pages.each do |id, page| %>
+          <li><%= link_to page["title"], "/#{page[:slug]}/" %></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="cads-grid-col">
+      <h3>What's happening on Workplace</h3>
+    </div>
+  </div>
+</div>
