@@ -1,0 +1,23 @@
+baseurl: ""
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
+plugins:
+  - jekyll-datapage-generator
+
+contentful:
+  spaces:
+    - intranet:
+        space: bryuf914fjzn
+        access_token: UWvviXdfWTWkVhjcclzP03YE8-Ho8uNGfHADk-F921M
+        destination: "" # root data dir
+
+page_gen-dirs: true
+page_gen:
+  - data: intranet.page
+    template: page
+    name: title
+    dir: ''

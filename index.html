@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="cads-grid-container">
+  <div class="cads-grid-row">
+    <div class="cads-grid-col">
+      <h3>Recently updated content</h3>
+      <ul>
+        {% assign recent_pages = site.data.intranet.page | sort: "sys.updated_at" | reverse %}
+        {% for page in recent_pages limit: 10 %}
+          <li>
+            <a href="{{ page.title | datapage_url: '' }}">{{ page.title }}</a>
+            ({{ page.sys.updated_at | date_to_string }})
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="cads-grid-col">
+      <h3>What's happening on Workplace</h3>
+    </div>
+  </div>
+</div>

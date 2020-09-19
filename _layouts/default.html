@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} - Intranet</title>
+    <link href="{{ 'assets/stylesheets/main.css' | relative_url }}" rel="stylesheet">
+  </head>
+  <body class="cads-adviser">
+    <div class="wrapper">
+
+      {% include header.html %}
+
+      <main class="cads-main-content">
+        {{ content }}
+      </main>
+
+    </div>
+  </body>
+</html>
