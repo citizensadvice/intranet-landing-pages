@@ -1,1 +1,26 @@
 @import "~@citizensadvice/design-system/scss/lib.scss";
+
+ul.landing-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+
+  li {
+    flex-grow: 1;
+    list-style-type: none;
+    text-align: center;
+
+    img {
+      height: 10vh;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .description {
+      width: min-content;
+      font-size: 70%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

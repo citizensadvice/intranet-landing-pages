@@ -32,11 +32,6 @@ activate :contentful do |f|
   f.content_types = { pages: 'page' }
 end
 
-# Create a page for each contentful page
-data.intranet.pages.each do |id, page|
-  proxy "/#{page[:slug]}/index.html", "/page.html", :locals => { :page => page }, ignore: true
-end
-
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
