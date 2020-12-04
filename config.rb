@@ -26,12 +26,6 @@ activate :external_pipeline,
   source: '.tmp/dist',
   latency: 1
 
-activate :contentful do |f|
-  f.space = { intranet: 'bryuf914fjzn' }
-  f.access_token = 'UWvviXdfWTWkVhjcclzP03YE8-Ho8uNGfHADk-F921M'
-  f.content_types = { pages: 'page' }
-end
-
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
