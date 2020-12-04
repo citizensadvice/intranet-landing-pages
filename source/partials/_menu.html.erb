@@ -1,0 +1,11 @@
+<ul class="landing-menu" role="navigation" aria-label="Primary navigation">
+  <% data.menu.each do |item| %>
+    <li>
+      <%= link_to image_tag(item["icon"]), item["url"] %>
+      <%= link_to item["label"], item["url"] %>
+      <% if item["description"] %>
+        <%= link_to item["description"], item["url"], class: "description" %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

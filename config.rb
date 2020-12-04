@@ -16,6 +16,7 @@ page '/*.txt', layout: false
 config[:js_dir] = 'assets/javascripts'
 config[:css_dir] = 'assets/stylesheets'
 set :haml, { :format => :html5 }
+set :markdown_engine, :redcarpet
 
 # set :sass_assets_paths, [ 'node_modules', 'node_modules/@citizensadvice/design-system' ]
 # Use webpack to build SCSS so we can use CA design system
