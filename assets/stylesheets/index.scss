@@ -3,24 +3,37 @@
 ul.landing-menu {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 4rem;
 
   li {
-    flex-grow: 1;
+    width: 120px;
     list-style-type: none;
     text-align: center;
+    border: 1px transparent solid;
+    padding: 5px;
+
+    &:hover {
+      color: $cads-language__link-hover-colour;
+      border-color: $cads-language__link-hover-colour;
+      background-color: $cads-language__hover-background-colour;
+    }
 
     img {
-      height: 10vh;
+      width: 50%;
       display: block;
       margin: 0 auto;
     }
 
     .description {
-      width: min-content;
       font-size: 70%;
       display: block;
-      margin: 0 auto;
+      color: inherit;
+      text-decoration: none;
     }
   }
+}
+
+.feedback {
+  margin: 3rem;
+  text-align: center;
 }
