@@ -1,32 +1,39 @@
 - label: Email
   icon: googlemail.png
   url: https://mail.google.com
+
 - label: Drive
   icon: googledrive.png
   url: https://drive.google.com
+
 - label: Calendar
   icon: googlecalendar.png
   url: https://calendar.google.com
+
 - label: HRevolution
   icon: hrevolution.png
   url: https://my.sdworx.co.uk/portal/login.aspx?organisation=2331
   description: |
     Book a holiday or check your payslip.
+
 - label: Intranet
   icon: intranet.png
   url: https://www.citizensadvice.org.uk/cablink/
   description: |
     Organisational policies and guidance.
+
 - label: Workplace
   icon: workplace.png
   url: https://citizensadvice.workplace.com
   description: |
     Connect with colleagues from across our service.
+
 - label: Witness box
   icon: witnessbox.png
   url: https://witnessbox.citizensadvice.org.uk/user/login
   description: |
     The Witness Service case management system.
+
 - label: Okta
   icon: okta.png
   url: https://citizensadvice.okta-emea.com
