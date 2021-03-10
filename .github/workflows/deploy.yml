@@ -36,3 +36,38 @@ jobs:
 
       - name: Build middleman site
         run: bundle exec middleman build
+
+      # uncomment to debug
+      # - uses: mxschmitt/action-tmate@v3
+
+      - name: Publish build to gh-pages
+        run: |
+          # fetch previous gh-pages build (if it exists)
+          git fetch origin refs/heads/gh-pages:refs/heads/gh-pages || true
+          previous_build_commit="$(git rev-parse --verify refs/heads/gh-pages 2>/dev/null || true)"
+
+          # write new build/ tree to git and save tree hash
+          git add --force build
+          build_tree="$(git write-tree --prefix=build)"
+
+          # build commit message
+          build_message="build gh-pages from $(git describe --tags --always)"
+
+          # configure commit author
+          git config user.email "actions@github"
+          git config user.name "GitHub Actions"
+
+          # generate initial commit if needed
+          if [ -z "${previous_build_commit}" ]; then
+            empty_tree="4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+            previous_build_commit="$(git commit-tree -m "initialize gh-pages" "${empty_tree}")"
+          fi
+
+          # create new commit
+          build_commit="$(git commit-tree -p "${previous_build_commit}" -p HEAD -m "${build_message}" "${build_tree}")"
+
+          # push new commit to gh-pages
+          git push origin "${build_commit}:refs/heads/gh-pages"
+
+      # uncomment to debug
+      # - uses: mxschmitt/action-tmate@v3
