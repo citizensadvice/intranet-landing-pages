@@ -13,6 +13,7 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+config[:http_prefix] = '/intranet'
 config[:js_dir] = 'assets/javascripts'
 config[:css_dir] = 'assets/stylesheets'
 set :haml, { :format => :html5 }
@@ -27,6 +28,4 @@ activate :external_pipeline,
   source: '.tmp/dist',
   latency: 1
 
-config[:http_prefix] = '/intranet'
-config[:relative_assets] = true
-config[:relative_links] = true
+activate :gzip
