@@ -10,12 +10,16 @@
   background-size: 100%;
 }
 
-.button {
+.cads-linkbutton {
   &:visited {
     color: $cads-language__brand-primary-contrast;
   }
 
-  &:focus:visited {
+  &:active {
+    outline: none;
     color: $cads-language__focus-text-colour;
+    border-color: $cads-language__focus-border-colour;
+    background-color: $cads-language__focus-colour;
+    box-shadow: 0 4px 0 0 $cads-language__focus-border-colour;
   }
 }
