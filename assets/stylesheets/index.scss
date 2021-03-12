@@ -13,6 +13,7 @@
 
 .button {
   margin-top: $cads-spacing-7;
+  border-bottom: $cads-border-width-medium solid transparent;
 
   &:visited {
     color: $cads-language__brand-primary-contrast;
