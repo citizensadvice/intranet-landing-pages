@@ -1,3 +1,21 @@
 @import "~@citizensadvice/design-system/scss/lib.scss";
 
 @import "./menu";
+
+.logo {
+  display: block;
+  background: url("/source/images/logo.png") no-repeat;
+  width: 350px;
+  height: 60px;
+  background-size: 100%;
+}
+
+.button {
+  &:visited {
+    color: $cads-language__brand-primary-contrast;
+  }
+
+  &:focus:visited {
+    color: $cads-language__focus-text-colour;
+  }
+}
