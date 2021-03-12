@@ -3,6 +3,7 @@
 @import "./menu";
 
 .logo {
+  margin-top: $cads-spacing-7;
   display: block;
   background: url("/source/images/logo.png") no-repeat;
   width: 350px;
@@ -10,7 +11,9 @@
   background-size: 100%;
 }
 
-.cads-linkbutton {
+.button {
+  margin-top: $cads-spacing-7;
+
   &:visited {
     color: $cads-language__brand-primary-contrast;
   }
@@ -22,4 +25,8 @@
     background-color: $cads-language__focus-colour;
     box-shadow: 0 4px 0 0 $cads-language__focus-border-colour;
   }
+}
+
+.feedback {
+  text-align: center;
 }
