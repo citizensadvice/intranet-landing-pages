@@ -40,18 +40,21 @@
     @extend %cads-h4;
     display: block;
 
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
     &:focus {
       border: none;
       background-color: inherit;
       color: inherit;
       outline: none;
       text-decoration: underline;
-    }
-
-    &:hover {
-      background-color: transparent;
-      border: none;
-      color: inherit;
     }
   }
 
