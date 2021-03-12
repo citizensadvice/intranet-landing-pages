@@ -13,9 +13,9 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-config[:http_prefix] = '/intranet'
-config[:js_dir] = 'assets/javascripts'
-config[:css_dir] = 'assets/stylesheets'
+config[:http_prefix] = ''
+config[:js_dir] = 'assets/javascripts/'
+config[:css_dir] = 'assets/stylesheets/'
 set :haml, { :format => :html5 }
 set :markdown_engine, :redcarpet
 

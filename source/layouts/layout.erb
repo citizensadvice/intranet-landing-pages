@@ -10,16 +10,16 @@
     <%= stylesheet_link_tag "index" %>
     <%= javascript_include_tag "index" %>
   </head>
-  <body class="cads-adviser">
+  <body>
     <div class="wrapper">
       <%= partial "partials/header" %>
-      <div class="cads-grid-container">
+      <div id="#cads-main-content">
         <%= yield %>
-      </div>
-      <div class="feedback">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScZs_BrDSCdKPTVSSRZdRgCUTvNSzWsOJjAFSR_gAUKJp09kQ/viewform?usp=sf_link">
-          Tell us what you think to help us improve it.
-        </a>
+        <div class="feedback">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScZs_BrDSCdKPTVSSRZdRgCUTvNSzWsOJjAFSR_gAUKJp09kQ/viewform?usp=sf_link">
+            Tell us what you think to help us improve it.
+          </a>
+        </div>
       </div>
     </div>
   </body>
