@@ -9,8 +9,8 @@ end
 # https://middlemanapp.com/basics/layouts/
 
 # Proxies
-["home", "witness"].each do |page|
-  proxy "/#{page}.html", "index.html"
+["witness"].each do |page|
+  proxy "/#{page}.html", "index.html", locals: {intranet_page: page}
 end
 
 
