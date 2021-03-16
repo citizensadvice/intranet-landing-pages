@@ -15,10 +15,13 @@
   margin-top: $cads-spacing-7;
   border-bottom: $cads-border-width-medium solid transparent;
 
-  &:visited {
-    color: $cads-language__brand-primary-contrast;
+  &:link,
+  &:visited,
+  &:hover {
+    color: white;
   }
 
+  &:focus:hover,
   &:active {
     outline: none;
     color: $cads-language__focus-text-colour;
@@ -26,8 +29,14 @@
     background-color: $cads-language__focus-colour;
     box-shadow: 0 4px 0 0 $cads-language__focus-border-colour;
   }
+
+  &:focus,
+  &:focus:active {
+    color: $cads-language__focus-text-colour;
+  }
 }
 
 .feedback {
+  margin-bottom: $cads-spacing-6;
   text-align: center;
 }
