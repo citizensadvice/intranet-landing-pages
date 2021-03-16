@@ -1,39 +1,43 @@
 @import "~@citizensadvice/design-system/scss/lib.scss";
 
-ul.landing-menu {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 4rem;
+@import "./menu";
 
-  li {
-    width: 120px;
-    list-style-type: none;
-    text-align: center;
-    border: 1px transparent solid;
-    padding: 5px;
+.logo {
+  margin-top: $cads-spacing-7;
+  display: block;
+  background: url("/source/images/logo.png") no-repeat;
+  width: 350px;
+  height: 60px;
+  background-size: 100%;
+}
 
-    &:hover {
-      color: $cads-language__link-hover-colour;
-      border-color: $cads-language__link-hover-colour;
-      background-color: $cads-language__hover-background-colour;
-    }
+.button {
+  margin-top: $cads-spacing-7;
+  border-bottom: $cads-border-width-medium solid transparent;
 
-    img {
-      width: 50%;
-      display: block;
-      margin: 0 auto;
-    }
+  &:link,
+  &:visited,
+  &:hover {
+    color: white;
+  }
 
-    .description {
-      font-size: 70%;
-      display: block;
-      color: inherit;
-      text-decoration: none;
-    }
+  &:focus:hover,
+  &:active {
+    outline: none;
+    color: $cads-language__focus-text-colour;
+    border-color: $cads-language__focus-border-colour;
+    background-color: $cads-language__focus-colour;
+    box-shadow: 0 4px 0 0 $cads-language__focus-border-colour;
+  }
+
+  &:focus,
+  &:focus:active {
+    color: $cads-language__focus-text-colour;
   }
 }
 
 .feedback {
-  margin: 3rem;
+  margin-bottom: $cads-spacing-6;
   text-align: center;
+  font-weight: bold;
 }
