@@ -13,11 +13,15 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-config[:http_prefix] = ''
 config[:js_dir] = 'assets/javascripts'
 config[:css_dir] = 'assets/stylesheets'
 set :haml, { :format => :html5 }
 set :markdown_engine, :redcarpet
+
+configure :build do 
+  set :http_prefix, '/intranet'
+  set :relative_links, true
+end
 
 # set :sass_assets_paths, [ 'node_modules', 'node_modules/@citizensadvice/design-system' ]
 # Use webpack to build SCSS so we can use CA design system
