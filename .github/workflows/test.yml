@@ -31,9 +31,6 @@ jobs:
       - name: Install node modules
         run: npm ci
 
-      - name: Install wait-port
-        run: npm install wait-port
-
       - name: Start site
         run: bundle exec middleman server &
 
