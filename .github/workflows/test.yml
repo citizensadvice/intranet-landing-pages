@@ -31,8 +31,14 @@ jobs:
       - name: Install node modules
         run: npm ci
 
+      - name: Install wait-port
+        run: npm install wait-port
+
       - name: Start site
         run: bundle exec middleman server &
+
+      - name: Wait for site
+        run: wait-port 4567
 
       - name: Run VRTs
         run: npx backstop test --config=backstop.config.js
