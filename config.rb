@@ -8,6 +8,12 @@ end
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
+# Proxies
+["witness"].each do |page|
+  proxy "/#{page}.html", "index.html", locals: {intranet_page: page}
+end
+
+
 # Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false
@@ -17,6 +23,8 @@ config[:js_dir] = 'assets/javascripts'
 config[:css_dir] = 'assets/stylesheets'
 set :haml, { :format => :html5 }
 set :markdown_engine, :redcarpet
+set :directory_indexes, true
+activate :directory_indexes
 
 configure :build do 
   set :http_prefix, '/intranet'
