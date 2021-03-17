@@ -1,7 +1,12 @@
 @import "~@citizensadvice/design-system/scss/1-settings/settings-imports";
 @import "~@citizensadvice/design-system/scss/2-tools/tools-imports";
 @import "~@citizensadvice/design-system/scss/3-generics/generics-imports";
-@import "~@citizensadvice/design-system/scss/4-elements/elements-imports";
+
+@import "~@citizensadvice/design-system/scss/4-elements/buttons";
+@import "~@citizensadvice/design-system/scss/4-elements/lists";
+@import "~@citizensadvice/design-system/scss/4-elements/links";
+@import "~@citizensadvice/design-system/scss/4-elements/typography";
+
 @import "~@citizensadvice/design-system/scss/5-objects/objects-imports";
 @import "~@citizensadvice/design-system/scss/6-components/skip-links";
 
