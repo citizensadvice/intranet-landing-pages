@@ -4,12 +4,12 @@ module.exports = {
   scenarios: [
     {
       label: "Home page",
-      url: "http://localhost:4567/",
+      url: "http://host.docker.internal:4567/",
       selector: ["document"],
     },
     {
       label: "Witness page",
-      url: "http://localhost:4567/witness",
+      url: "http://host.docker.internal:4567/witness",
       selector: ["document"],
     },
   ],

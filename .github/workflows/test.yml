@@ -40,7 +40,7 @@ jobs:
       - name: Run VRTs
         run: |
           sleep 5
-          npx backstop test --config=backstop.config.js
+          npx backstop test --docker --config=backstop.config.js
 
       - name: Upload VRT report
         if: always()
