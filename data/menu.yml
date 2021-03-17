@@ -1,26 +1,26 @@
 - label: Email
-  icon: googlemail.png
+  icon: email.svg
   url: https://mail.google.com
   show_on:
     - home
     - witness
 
 - label: Drive
-  icon: googledrive.png
+  icon: drive.svg
   url: https://drive.google.com
   show_on:
     - home
     - witness
 
 - label: Calendar
-  icon: googlecalendar.png
+  icon: calendar.svg
   url: https://calendar.google.com
   show_on:
     - home
     - witness
 
 - label: HRevolution
-  icon: hrevolution.png
+  icon: HRevolution.svg
   url: https://my.sdworx.co.uk/portal/login.aspx?organisation=2331
   description: |
     Book a holiday or check your payslip.
@@ -29,7 +29,7 @@
     - witness
 
 - label: Intranet
-  icon: intranet.png
+  icon: intranet.svg
   url: https://www.citizensadvice.org.uk/cablink/
   description: |
     Organisational policies and guidance.
@@ -38,7 +38,7 @@
     - witness
 
 - label: Workplace
-  icon: workplace.png
+  icon: workplace.svg
   url: https://citizensadvice.workplace.com
   description: |
     Connect with colleagues from across our service.
@@ -47,7 +47,7 @@
     - witness
 
 - label: Witness box
-  icon: witnessbox.png
+  icon: witnessbox.svg
   url: https://witnessbox.citizensadvice.org.uk/user/login
   description: |
     The Witness Service case management system.
@@ -55,7 +55,7 @@
     - witness
 
 - label: Okta
-  icon: okta.png
+  icon: okta.svg
   url: https://citizensadvice.okta-emea.com
   description: |
     Access tools like Casebook and Docebo, our learning platform.

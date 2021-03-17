@@ -14,6 +14,7 @@
     width: 200px;
     padding: $cads-spacing-6;
     border-bottom: $cads-border-width-medium solid transparent;
+    text-align: center;
 
     &:hover {
       cursor: pointer;
@@ -35,8 +36,9 @@
   }
 
   &__icon {
-    width: 80px;
-    margin-bottom: $cads-spacing-5;
+    display: block;
+    width: 60px;
+    margin: 0 auto $cads-spacing-5;
   }
 
   &__link {
