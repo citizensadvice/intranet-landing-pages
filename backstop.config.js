@@ -19,7 +19,8 @@ module.exports = {
     html_report: "backstop_data/html_report",
     ci_report: "backstop_data/ci_report",
   },
-  dockerRunExtraArgs: "-t=false",
+  dockerCommandTemplate:
+    'docker run --rm -i --mount type=bind,source="{cwd}",target=/src backstopjs/backstopjs:{version} {backstopCommand} {args}',
   report: ["browser"],
   engine: "puppeteer",
   engineOptions: {
