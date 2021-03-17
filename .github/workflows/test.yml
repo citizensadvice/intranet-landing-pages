@@ -38,7 +38,7 @@ jobs:
         run: bundle exec middleman server &
 
       - name: Wait for site
-        run: wait-port 4567
+        run: npx wait-port 4567
 
       - name: Run VRTs
         run: npx backstop test --config=backstop.config.js
