@@ -4,12 +4,12 @@ module.exports = {
   scenarios: [
     {
       label: "Home page",
-      url: "http://localhost:4567/",
+      url: "http://host.docker.internal:4567/",
       selector: ["document"],
     },
     {
       label: "Witness page",
-      url: "http://localhost:4567/witness",
+      url: "http://host.docker.internal:4567/witness",
       selector: ["document"],
     },
   ],
@@ -20,7 +20,7 @@ module.exports = {
     ci_report: "backstop_data/ci_report",
   },
   dockerCommandTemplate:
-    'docker run --rm -i --mount type=bind,source="{cwd}",target=/src backstopjs/backstopjs:{version} {backstopCommand} {args}',
+    'docker run --rm -i --mount -p=4567:4567 type=bind,source="{cwd}",target=/src backstopjs/backstopjs:{version} {backstopCommand} {args}',
   report: ["browser"],
   engine: "puppeteer",
   engineOptions: {
