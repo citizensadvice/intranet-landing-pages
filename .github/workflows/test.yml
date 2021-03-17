@@ -38,12 +38,12 @@ jobs:
         run: bundle exec middleman server &
 
       - name: Wait for site
-        run: |
-          npx wait-port 4567
-          sleep 5
+        run: npx wait-port 4567
 
       - name: Run VRTs
-        run: npx backstop test --config=backstop.config.js
+        run: |
+          sleep 5
+          npx backstop test --config=backstop.config.js
 
       - name: Upload VRT report
         if: always()
