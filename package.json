@@ -4,7 +4,7 @@
     "build": "webpack --bail -p"
   },
   "dependencies": {
-    "@citizensadvice/design-system": "^4.0.3"
+    "@citizensadvice/design-system": "^4.0.4"
   },
   "devDependencies": {
     "css-loader": "^4.3.0",
