@@ -3,7 +3,7 @@
   <% menu_items(intranet_page ||= "home").each do |item| %>
     <li class="landing-menu__list-item">
       <%= image_tag(item["icon"], class: "landing-menu__icon") %>
-      <%= link_to item["label"], item["url"], class: "landing-menu__link" %>
+      <%= link_to item["label"], item["url"], class: "landing-menu__link", target: "_blank" %>
       <% if item["description"] %>
         <span class="landing-menu__description">
           <%= item["description"] %>
