@@ -58,7 +58,7 @@
   icon: okta.svg
   url: https://citizensadvice.okta-emea.com
   description: |
-    Access tools like Casebook and Docebo, our learning platform.
+    Access tools like Casebook and Skillbook, our learning platform.
   show_on:
     - home
     - witness
