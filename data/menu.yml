@@ -19,9 +19,9 @@
     - home
     - witness
 
-- label: HRevolution
+- label: Dayforce
   icon: HRevolution.svg
-  url: https://my.sdworx.co.uk/portal/login.aspx?organisation=2331
+  url:  https://citizensadvice.okta-emea.com/
   description: |
     Book a holiday or check your payslip.
   show_on:
